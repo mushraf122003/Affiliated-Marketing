@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{% static 'csss/styles.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body>
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>Wellcome To Market</h1><br>
+		{% for message in messages %}
+        <div class="al">
+            <strong class="message" >Message: {{ message }} </strong>
+            <button type="button" id="close" class="closes" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="/signup" method="post">
+                    {% csrf_token %}
+					<input class="text" type="text" id="username" name="username" placeholder="Username" required=""><br>
+                    <input class="text" type="text" id="firstname" name="name" placeholder="Firstname" required=""><br>
+                    <input class="text" type="text" id="lastname" name="lname" placeholder="Lastname" required="">
+					<input class="text email" type="email" id="email" name="email" placeholder="Email" required="">
+					<input class="text" type="password" id="pass1" name="pass1" placeholder="Password" required=""><br>
+					<input class="text" type="password" id="pass2" name="pass2" placeholder="Confirm Password" required="">
+					<div class="wthree-text"><br>
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span>
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="SIGNUP">
+				</form>
+				<p>Don't have an Account? <a href="/signin"> Sigin Now!</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- //main -->
+</body>
+
+{% block js_block %}
+    <script src="{% static 'js/sigup.js' %}"></script>
+
+{% endblock %}
+
+
+</html>

@@ -1,0 +1,402 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affilated Market</title>
+    
+    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}"/>
+    <link rel="stylesheet" href="{% static '/owl.carousel.min.css' %}"/>
+    
+</head> 
+<body>
+
+    <!--navbars-->
+    <nav>
+        <div class="navbar">
+            <div class="nav_logo d-flex align-center">
+                <h2>Affilated</h2>
+            </div>
+            <div class="nav_li">
+
+                <ul class="d-flex align-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Best Product</a></li>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Product Gallery</a></li>
+                    <i class="fas fa-search" id="search">O</i>
+                </ul>
+                <div class="input_search d-flex">
+                    <input type="text">
+                    <i class="fas fa-times font-16" id="remove">X</i>
+                </div>
+            </div>
+            <div class="nav_btn d-flex align-center">
+                {% if user.is_authenticated %}
+                <h3>{{ fname }}</h3>
+                <button type="submit"><a href="/signout">signout</a></button>
+                {% else %}
+                <button type="submit"><a href="/signin">Signin</a></button>
+                <button type="submit"><a href="/signup">Signup</a></button>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+    <!--navbars-->
+    
+    <div class="body">
+         <!--home-->
+    <div class="container">
+        <di class="text d-flex align-center">
+            <div class="inner">
+                <h2>today it is <span>90% off</span> today</h2>
+                <h1>Mobile & Accesaries</h1>
+                <p>Affiliate marketing is a marketing arrangement in which affiliates receive a commission for each visit,
+                     signup or sale they generate for a merchant.
+                     This arrangement allows businesses to outsource part of the sales process.
+                </p>
+                <button>Get Started</button>
+            </div> 
+        </di>
+        <di class="img d-flex align-center">
+            <img src="{% static 'imgs/imgs1.png' %}"
+        </di>
+    </div>
+    <!--home-->
+
+    <!--product overview-->
+    <hr>
+    <div class="head">
+        <center>
+            <h2>Best <span>Mobiles</span> in  The Year 2022</h2>
+        </center>
+    </div>
+    <div class="pro-overview">
+        <div class="img">
+
+            
+        </div>
+        <div class="pro-text">
+            <div class="inner d-flex align-center">
+                <img src="{% static 'imgs/sam1.avif' %}" alt="">
+                <div class="text">
+                    <h3>Tob Mobile Phones Under 15,000 in 2022</h3>
+                    <h4>Published on September 2022</h4>
+                    <p>
+                        Mobile photography is the art of photography using a smartphone or mobile device.
+                         Defined using the philosophy of 'the best camera is the one that's always with you',
+                          mobile photography is the future of the art form. Discreet,
+                         intimate and always accessible to
+                    </p>
+                    <a href="#">Buy Now</a>
+
+                </div>
+            </div>
+            <div class="inner d-flex align-center">
+                <img src="{% static 'imgs/1pluse.avif' %}" alt="">
+                <div class="text">
+                    <h3>Tob Mobile Phones Under 15,000 in 2022</h3>
+                    <h4>Published on September 2022</h4>
+                    <p>
+                        Mobile photography is the art of photography using a smartphone or mobile device.
+                         Defined using the philosophy of 'the best camera is the one that's always with you',
+                          mobile photography is the future of the art form. Discreet,
+                         intimate and always accessible to
+                    </p>
+                    <a href="#">Buy Now</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="head">
+        <center>
+            <h2>Best <span>Laptops</span> in  The Year 2022</h2>
+        </center>
+    </div>
+    <div class="pro-overview">
+        <div class="pro-text">
+            <div class="inner d-flex align-center">
+                <img src="{% static 'imgs/sam1.avif' %}" alt="">
+                <div class="text">
+                    <h3>Tob Mobile Phones Under 15,000 in 2022</h3>
+                    <h4>Published on September 2022</h4>
+                    <p>
+                        Mobile photography is the art of photography using a smartphone or mobile device.
+                         Defined using the philosophy of 'the best camera is the one that's always with you',
+                          mobile photography is the future of the art form. Discreet,
+                         intimate and always accessible to
+                    </p>
+                    <a href="#">Buy Now</a>
+
+                </div>
+            </div>
+            <div class="inner d-flex align-center">
+                <img src="{% static 'imgs/1pluse.avif' %}" alt="">
+                <div class="text">
+                    <h3>Tob Mobile Phones Under 15,000 in 2022</h3>
+                    <h4>Published on September 2022</h4>
+                    <p>
+                        Mobile photography is the art of photography using a smartphone or mobile device.
+                         Defined using the philosophy of 'the best camera is the one that's always with you',
+                          mobile photography is the future of the art form. Discreet,
+                         intimate and always accessible to
+                    </p>
+                    <a href="#">Buy Now</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="img img-2">
+
+        </div>
+    </div>
+    <hr>
+    <div class="head">
+        <center>
+            <h2>Best <span>Smart Watches</span> in  The Year 2022</h2>
+        </center>
+    </div>
+    <div class="pro-overview">
+        <div class="img-3">
+
+            
+        </div>
+        <div class="pro-text">
+            <div class="inner d-flex align-center">
+                <img src="{% static 'imgs/sam1.avif' %}" alt="">
+                <div class="text">
+                    <h3>Tob Mobile Phones Under 15,000 in 2022</h3>
+                    <h4>Published on September 2022</h4>
+                    <p>
+                        Mobile photography is the art of photography using a smartphone or mobile device.
+                         Defined using the philosophy of 'the best camera is the one that's always with you',
+                          mobile photography is the future of the art form. Discreet,
+                         intimate and always accessible to
+                    </p>
+                    <a href="#">Buy Now</a>
+
+                </div>
+            </div>
+            <div class="inner d-flex align-center">
+                <img src="{% static 'imgs/1pluse.avif' %}" alt="">
+                <div class="text">
+                    <h3>Tob Mobile Phones Under 15,000 in 2022</h3>
+                    <h4>Published on September 2022</h4>
+                    <p>
+                        Mobile photography is the art of photography using a smartphone or mobile device.
+                         Defined using the philosophy of 'the best camera is the one that's always with you',
+                          mobile photography is the future of the art form. Discreet,
+                         intimate and always accessible to
+                    </p>
+                    <a href="#">Buy Now</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--product overview-->
+   <!--our products-->
+    <div class="head">
+        <center>
+            <h1>Our All Products</h1>
+        </center>
+    </div>
+    <div class="products">
+        <div class="wrapper">
+            <div class="carousel owl-carousel">
+                
+                <div class="card">
+                    <img src="{% static 'imgs/sam2.png' %}" alt="">
+                    <div class="product-text">
+                        <h3>Samsung (4GB ram) 2021..</h3>
+                        <p> Defined using the philosophy of 'the best camera is the one that's always with you',
+                            mobile photography is the future of the art form. Discreet,
+                            intimate and always accessible to.
+                        </p>
+                        <a href="#">Buynow</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{% static 'imgs/sam2.png' %}" alt="">
+                    <div class="product-text">
+                        <h3>Samsung (4GB ram) 2021..</h3>
+                        <p> Defined using the philosophy of 'the best camera is the one that's always with you',
+                            mobile photography is the future of the art form. Discreet,
+                            intimate and always accessible to.
+                        </p>
+                        <a href="#">Buynow</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{% static 'imgs/sam2.png' %}" alt="">
+                    <div class="product-text">
+                        <h3>Samsung (4GB ram) 2021..</h3>
+                        <p> Defined using the philosophy of 'the best camera is the one that's always with you',
+                            mobile photography is the future of the art form. Discreet,
+                            intimate and always accessible to.
+                        </p>
+                        <a href="#">Buynow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--our products-->
+    <!--products post-->
+    <div class="blogs">
+        <div class="blog">
+            <img src="{% static 'imgs/bed2.jpg' %}" alt="">
+            <div class="blog-text">
+                <h3>Best Bed For You</h3>
+                <p> Defined using the philosophy of 'the best camera is the one that's always with you',
+                    mobile photography is the future of the art form. Discreet,
+                    intimate and always accessible to.
+                </p>
+                <button>Read More <i class="fas fa-arrow-right"></i></button>
+                <div class="tag">
+                    feb 24, 2022.
+                </div>
+            </div>
+        </div>
+        <div class="blog">
+            <img src="{% static 'imgs/bed2.jpg' %}" alt="">
+            <div class="blog-text">
+                <h3>Best Bed For You</h3>
+                <p> Defined using the philosophy of 'the best camera is the one that's always with you',
+                    mobile photography is the future of the art form. Discreet,
+                    intimate and always accessible to.
+                </p>
+                <button>Read More <i class="fas fa-arrow-right"></i></button>
+                <div class="tag">
+                    feb 24, 2022.
+                </div>
+            </div>
+        </div>
+        <div class="blog">
+            <img src="{% static 'imgs/bed2.jpg' %}" alt="">
+            <div class="blog-text">
+                <h3>Best Bed For You</h3>
+                <p> Defined using the philosophy of 'the best camera is the one that's always with you',
+                    mobile photography is the future of the art form. Discreet,
+                    intimate and always accessible to.
+                </p>
+                <button>Read More <i class="fas fa-arrow-right"></i></button>
+                <div class="tag">
+                    feb 24, 2022.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--products post-->
+
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <div class="footer-div one">
+                <h2>Affilated.com</h2>
+                <p>
+                    Defined using the philosophy of 'the best camera is the one that's always with you',
+                    mobile photography is the future of the art form. Discreet,
+                    intimate and always accessible to.
+                </p>
+            </div>
+            <div class="footer-div two">
+                <h2>Quick Links</h2>
+                <div class="links">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Most Populars</a>
+                    </li>
+                    <li>
+                        <a href="#">Signup & login</a>
+                    </li>
+                </div>
+            </div>
+            <div class="footer-div three">
+                <h2>Social Links</h2>
+                <div class="link">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </div>
+                <div class="link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </div>
+                <div class="link">
+                    <i class="fab fa-youtube"></i>
+                    <span>Youtube</span>
+                </div>
+                <div class="link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </div>
+            </div>
+            <div class="footer-div four">
+                <h2>Thank you</h2>
+                <p>Thankyou for Visiting The Page,
+                    Hope This page Has Been Userfull To.
+                    Visit The Page Again And Please Feel Free
+                    To Give Your Comments. 
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--footer-->
+
+    </div>
+
+
+    <!--java script-->
+    
+    <script>
+        $(".carousel").owlCarousel({
+            nav: false,
+            loop: true,
+            responsive: {
+                0: {
+                    items:1,
+                },
+                600: {
+                    items:2,
+                },
+                0: {
+                    items:1,
+                },
+            }
+        })
+       
+    </script>
+
+</body>
+
+<!--fontawesome-->
+<script src=" static https://kit.fontawesome.com/c5c09e953e.js" crossorigin ="anonymous"></script>
+
+<!--fontawesome-->
+
+
+
+{% block js_block %}
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+{% endblock %}
+
+</html>
